@@ -20,6 +20,7 @@ $generator_options = get_option('faster_theme_options');
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="La Casa de los Pixeles" >
         <meta name="description" content="Creamos soluciones digitales, desde sitios web hasta aplicaciones móviles y campañas de marketing digital. Cónocenos y convéncete.">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <!-- Twitter Card -->
         <meta name="twitter:site" content="@lacasadepixeles" />
         <meta name="twitter:card" content="summary_large_image" />

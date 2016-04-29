@@ -20,14 +20,21 @@
                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 
 
-                    <div class="col-md-7 content-box"  id="slider1">
+                    <div class="col-md-5 content-box"  id="slider1" style="
+                         position: relative;
+                         margin-top: -45%;
+                         margin-left: 5%;
+                         width: 90%;; 
+                         ">
 
-                        <div class="container" id="textoContenido" >
+                        <div class="container" id="textoContenido" style="   width: 90%;margin: auto;
+                             min-width: 800px;
+                             max-width: 800px;
+                             margin-top: auto; " >
 
-                            <h1 style="color: white;">Tu presencia en línea cuenta, y mucho</h1>
-                            <br>
-                            <p style="color: white;">Hagamos que se enamoren de tu empresa a <br> primera vista por medio de <b>tu sitio web</b>.</p>
-                            <a href="//lacasadelospixeles.com/contacto" class="emerald-btn">Iniciar Proyecto</a>
+                            <h1 style="color: white;"><?php the_field('titulo_slider_1'); ?></h1>
+                            <p style="color: white; " ><?php the_field('contenido_del_slider_1'); ?></p>
+                            <a  class="emerald-btn" href="<?php the_field('link_contac'); ?>">Iniciar proyecto</a>
                         </div>
                     </div>
                 <?php endif; ?>
@@ -38,13 +45,18 @@
                 if (!empty($image)):
                     ?>
                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-                    <div class="col-md-7 content-box" id="slider1">
+                    <div class="col-md-5 content-box" id="slider1" style="
+                         position: relative;
+                         margin-top: -45%;
+                         margin-left: 5%;
+                         width: 90%;; 
+                         ">
                         <div class="container" id="textoContenido" >
 
-                            <h1 style="color: white;">Tus clientes se <br> mueven, muévete con ellos</h1>
+                            <h1 style="color: white;"><?php the_field('titulo_slider_2'); ?></h1>
                             <br>
-                            <p style="color: white;"> Te ayudamos a que <b> tu sitio web se adapte a smartphones y tablets.</b></p>
-                            <a href="//lacasadelospixeles.com/contacto" class="emerald-btn">Iniciar Proyecto</a>
+                            <p style="color: white;"> <?php the_field('contenido_del_slider_2'); ?></p>
+                            <a  class="emerald-btn" href="<?php the_field('link_contac'); ?>">Iniciar proyecto</a>
                         </div>
                     </div>
                 <?php endif; ?>
@@ -57,13 +69,17 @@
                     ?>
 
                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-                    <div class="col-md-7 content-box" id="slider1">
+                    <div class="col-md-7 content-box" id="slider1" style="
+                         position: relative;
+                         margin-top: -45%;
+                         margin-left: 5%;
+                         width: 90%;; 
+                         ">
                         <div class="container" id="textoContenido" >
-                            <h1 style="color: white;">Contar con las herramientas no significa que debas hacerlo tú mismo</h1>
+                            <h1 style="color: white;"><?php the_field('titulo_slider_3'); ?></h1>
                             <br>
-                            <p style="color: white;">  profesionales. Deja tu sitio en nuestras manos y dedícate a lo que a ti más te importa, tu empresa.</p>
-                            <a href="//lacasadelospixeles.com/contacto" class="emerald-btn">Iniciar Proyecto</a>
-                        </div>
+                            <p style="color: white;"><?php the_field('contenido_del_slider_3'); ?> </p>
+                            <a  class="emerald-btn" href="<?php the_field('link_contac'); ?>">Iniciar proyecto</a>                        </div>
                     </div>
                 <?php endif; ?>
             </div>
@@ -89,7 +105,7 @@
             <div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">
                 <h2><?php the_field('titulo-principal'); ?></h2>
                 <p><?php the_field('sib-titulo-principal'); ?></p>
-                <a  class="emerald-btn" href="<?php the_field('link_page'); ?>">conoce mas de nosotros</a>
+                <a  class="emerald-btn" href="<?php the_field('link_nosotros'); ?>">conoce mas de nosotros</a>
             </div>
         </div>
     </div>
@@ -136,7 +152,7 @@
 
             <?php endif; ?>
         </div>
-        <a  class="emerald-btn" href="<?php the_field('link_page'); ?>">conoce mas de nosotros</a>
+        <a  class="emerald-btn" href="<?php the_field('link_nosotros'); ?>">conoce mas de nosotros</a>
     </div>
 </div><!-- Servicios -->
 
@@ -171,7 +187,7 @@
                     </a>
                 </div>
                 <?php if ($link): ?>
-        
+
                 <?php endif; ?>
             <?php endwhile; ?>
 
