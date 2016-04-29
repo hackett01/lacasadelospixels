@@ -115,7 +115,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <button type="button" class="emerald-btn pull-right apply" data-toggle="modal" data-target="#myModal">Open Modal</button>
+                        <button type="button" class="emerald-btn pull-right apply" data-toggle="modal" data-target="#myModal">APLICAR PARA EL PUESTO</button>
                     </div>
                 </div><!--row-->
                 <div class="row job-description">
@@ -147,7 +147,7 @@
                 </div>
                 <?php if ($link): ?>
                 <?php endif; ?>
-            <?php endwhile; ?>
+             <?php endwhile; ?>
 
         <?php endif; ?>
         <!-- Modal -->
@@ -159,7 +159,7 @@
                     <div class="modal-header form-heading">
                         <button type="button" class="close" data-dismiss="modal" style="    float: left;
                                 margin-top: 3%;
-                                margin-left: -7%;"><i style=" color:  black; " class="fa fa-times" aria-hidden="true"></i></button>
+                                margin-left: -7%;"><i style=" color:  black; " class="glyphicon glyphicon-remove" aria-hidden="true"></i></button>
                         <h4>¿Tienes lo que se necesita?</h4>
                         <p>Envíanos el siguiente formulario con tus datos y nos pondremos en contacto.</p>
                     </div>

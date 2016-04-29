@@ -15,7 +15,6 @@ wp_enqueue_style('portafolio', get_template_directory_uri() . '/css/portafolio.c
 
 
 wp_enqueue_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.js',  array(), '', '');
-wp_enqueue_script('bootstrapmin', get_template_directory_uri() . '/js/bootstrap.min.js',  array(), '', '');;
 
 
 
