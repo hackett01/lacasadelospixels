@@ -44,15 +44,10 @@
                 <p class="wow fadeIn"  data-wow-duration="2s"><?php the_field('content_text_contact'); ?></p>
                 <div class="row">
                     <div class="col-sm-1 ">
-
                     </div>
                     <div class="col-sm-6 ">
-
                         <?php echo do_shortcode('[contact-form-7 id="657" title="Contact form 1"]'); ?>
 
-
-
-                   
                     </div>
                     <div class="col-sm-4 wow fadeIn"  data-wow-duration="2s" data-wow-delay="0.3s">
                         <h3><?php the_field('title_social'); ?></h3>
@@ -70,11 +65,9 @@
                 </div>
             </div>
             <div class="col-lg-5">
-               
             </div>
         </div>
     </section>
-
 
 
     <?php get_footer(); ?>
