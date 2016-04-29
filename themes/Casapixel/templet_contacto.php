@@ -1,53 +1,58 @@
 <?php /* Template Name: Contacto */ ?>
+
 <?php get_header(); ?>
 <div class="ych-menu-content">
-       <!--Banner Principal -->
-       
-        <?php if (have_rows('background')): ?>
-            <?php
-            while (have_rows('background')): the_row();
+    <!--Banner Principal -->
 
-                // vars
-                $icono = get_sub_field('imagen_icon');
-                $image = get_sub_field('background_imagen');
-                $title = get_sub_field('title');
-                $title_sub = get_sub_field('sub-title');
-                ?>
-                <?php if ($link): ?>
+    <?php if (have_rows('background')): ?>
+        <?php
+        while (have_rows('background')): the_row();
 
-                <?php endif; ?>
+            // vars
+            $icono = get_sub_field('imagen_icon');
+            $image = get_sub_field('background_imagen');
+            $title = get_sub_field('title');
+            $title_sub = get_sub_field('sub-title');
+            ?>
+            <?php if ($link): ?>
 
-                <section  id="banner02" class="banner background"  background-size="cover" style=" background-image: url('<?php echo $image['url']; ?>');   background-size: cover; ">
-                    <div class="row">
-                        <div class="col-md-10 col-md-offset-1">
-                            <img src="<?php echo $icono['url']; ?>" alt="<?php echo $icono['alt']; ?>" />
-                            <h1 class="wow fadeIn" data-wow-duration="2s">  <?php echo $title; ?></h1>
-                            <p>  <?php echo $title_sub; ?></p>
-                        </div>
+            <?php endif; ?>
+
+            <section  id="banner02" class="banner background"  background-size="cover" style=" background-image: url('<?php echo $image['url']; ?>');   background-size: cover; ">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <img src="<?php echo $icono['url']; ?>" alt="<?php echo $icono['alt']; ?>" />
+                        <h1 class="wow fadeIn" data-wow-duration="2s">  <?php echo $title; ?></h1>
+                        <p>  <?php echo $title_sub; ?></p>
                     </div>
-                </section>
-                <?php if ($link): ?>
-                <?php endif; ?>
-            <?php endwhile; ?>
-        <?php endif; ?>
+                </div>
+            </section>
+            <?php if ($link): ?>
+            <?php endif; ?>
+        <?php endwhile; ?>
+    <?php endif; ?>
 
 
-        <!-- /Banner Principal -->
-    
-    
-    
+    <!-- /Banner Principal -->
+
+
+
     <section id="contacto">
         <div class="row nom" >
             <div class="col-lg-8">
                 <h1 class="wow fadeIn"  data-wow-duration="2s"><?php the_field('sub_title'); ?></h1>
                 <p class="wow fadeIn"  data-wow-duration="2s"><?php the_field('content_text_contact'); ?></p>
                 <div class="row">
-                    <div class="col-sm-8">
+                    <div class="col-sm-1 ">
+
+                    </div>
+                    <div class="col-sm-6 ">
 
                         <?php echo do_shortcode('[contact-form-7 id="657" title="Contact form 1"]'); ?>
 
 
 
+                   
                     </div>
                     <div class="col-sm-4 wow fadeIn"  data-wow-duration="2s" data-wow-delay="0.3s">
                         <h3><?php the_field('title_social'); ?></h3>
@@ -65,10 +70,11 @@
                 </div>
             </div>
             <div class="col-lg-5">
-              
+               
             </div>
         </div>
     </section>
+
 
 
     <?php get_footer(); ?>
