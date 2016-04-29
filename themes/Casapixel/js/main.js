@@ -16,7 +16,9 @@ WebFontConfig = {
             e.src='https://www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-60639905-1','auto');ga('send','pageview');
-$(document).ready(function(){
+            
+var jq=jQuery.noConflict();            
+jq(document).ready(function(){
   //Improve SEO & Performance appends
   $('head').append('<link rel="stylesheet" type="text/css" href="//:lacasadelospixeles.com/css/animate.css" media="all">');
   $('head').append('<link rel="stylesheet" type="text/css" href="//:lacasadelospixeles.com/css/normalize.css" media="all">');
@@ -165,10 +167,14 @@ $(document).ready(function(){
         $('#success-msg').addClass('wrong');
         $('#success-msg').addClass('shows');
       });
-    });
+    }
+            
+            );
     });
 
-$('#applyform button[type="submit"]').click(function(event){
+var tes=jQuery.noConflict();   
+
+('#applyform button[type="submit"]').click(function(event){
     event.preventDefault();
 
     var error = 0;

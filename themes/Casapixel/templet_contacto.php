@@ -42,14 +42,14 @@
                 <h1 class="wow fadeIn"  data-wow-duration="2s"><?php the_field('sub_title'); ?></h1>
                 <p class="wow fadeIn"  data-wow-duration="2s"><?php the_field('content_text_contact'); ?></p>
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-8">
 
                         <?php echo do_shortcode('[contact-form-7 id="657" title="Contact form 1"]'); ?>
 
 
 
                     </div>
-                    <div class="col-sm-5 wow fadeIn"  data-wow-duration="2s" data-wow-delay="0.3s">
+                    <div class="col-sm-4 wow fadeIn"  data-wow-duration="2s" data-wow-delay="0.3s">
                         <h3><?php the_field('title_social'); ?></h3>
                         <ul class="social">
                             <li><a target="_blank" href="http://www.facebook.com/CasadePixeles"><i class="lcp-icon lcp-fb"></i></a></li>
@@ -65,7 +65,7 @@
                 </div>
             </div>
             <div class="col-lg-5">
-                <?php echo do_shortcode('[wpgmza id="1"]'); ?>
+              
             </div>
         </div>
     </section>
