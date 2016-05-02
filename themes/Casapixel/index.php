@@ -5,35 +5,32 @@
 
 <div class="ych-menu-content">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
 
                 <?php
                 $image = get_field('slide-1');
-
                 if (!empty($image)):
                     ?>
-
                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-
-
-                    <div class="col-md-5 content-box"  id="slider1" style="
+                    <div class="col-md-12 content-box" id="slider1" style="
                          position: absolute;
-                         margin-top: -45%;
-                         margin-left: 5%;
+                         margin-top: -40%;
+                         float:  left;
                          width: 90%;; 
                          ">
-
-                        <div class="container" id="textoContenido" style="   width: 90%;margin: auto;
+                        <div class="container" id="textoContenido" style="   
+                             width: 90%;
+                             margin: auto;
                              min-width: 800px;
                              max-width: 800px;
                              margin-top: auto; " >
+                            <div class=" container ">
+                                <h1 style="color: white; float: left;  "><?php the_field('titulo_slider_1'); ?></h1>
+                                <p style="color: white; float:  left;  " ><?php the_field('contenido_del_slider_1'); ?></p>        
+                            </div>
 
-                            <h1 style="color: white;"><?php the_field('titulo_slider_1'); ?></h1>
-                            <p style="color: white; " ><?php the_field('contenido_del_slider_1'); ?></p>
                             <a  class="emerald-btn" href="<?php the_field('link_contac'); ?>">Iniciar proyecto</a>
                         </div>
                     </div>
@@ -45,19 +42,26 @@
                 if (!empty($image)):
                     ?>
                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-                    <div class="col-md-5 content-box" id="slider1" style="
+                    <div class="col-md-12 content-box" id="slider1" style="
                          position: absolute;
-                         margin-top: -45%;
-                         margin-left: 5%;
+                         margin-top: -40%;
+                         float:  left;
                          width: 90%;; 
                          ">
-                        <div class="container" id="textoContenido" >
+                        <div class="container" id="textoContenido" style="   
+                             width: 90%;
+                             margin: auto;
+                             min-width: 800px;
+                             max-width: 800px;
+                             margin-top: auto; " >
+                            <div class=" container ">
+                                <h1 style="color: white; float: left; max-width: 100%; "><?php the_field('titulo_slider_2'); ?></h1>
+                                <p style="color: white; float:  left;  " ><?php the_field('contenido_del_slider_2'); ?></p>        
+                            </div>
 
-                            <h1 style="color: white;"><?php the_field('titulo_slider_2'); ?></h1>
-                            <br>
-                            <p style="color: white;"> <?php the_field('contenido_del_slider_2'); ?></p>
                             <a  class="emerald-btn" href="<?php the_field('link_contac'); ?>">Iniciar proyecto</a>
                         </div>
+
                     </div>
                 <?php endif; ?>
             </div>
@@ -69,13 +73,18 @@
                     ?>
 
                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-                    <div class="col-md-7 content-box" id="slider1" style="
-                         position: relative;
-                         margin-top: -45%;
-                         margin-left: 5%;
-                         width: 90%;; 
+                    <div class="col-md-12 content-box" id="slider1" style="
+                         position: absolute;
+                         margin-top: -40%;
+                         float:  left;
+                         width: 90%;;  
                          ">
-                        <div class="container" id="textoContenido" >
+                        <div class="container" id="textoContenido" style="
+                             width: 90%;
+                             margin: auto;
+                             min-width: 800px;
+                             max-width: 800px;
+                             margin-top: auto;" >
                             <h1 style="color: white;"><?php the_field('titulo_slider_3'); ?></h1>
                             <br>
                             <p style="color: white;"><?php the_field('contenido_del_slider_3'); ?> </p>
@@ -83,9 +92,7 @@
                     </div>
                 <?php endif; ?>
             </div>
-
         </div>
-
         <!-- Left and right controls -->
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>

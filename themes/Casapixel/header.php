@@ -74,3 +74,10 @@ $generator_options = get_option('faster_theme_options');
             </div>
         </div>
     </header>
+          <!--****************************************************************
+    ********************************************************************
+    Es bueno verte por aquí. Si te interesa trabajar con nosotros
+    puedes enviar tu C.V. a jobs@lacasadelospixeles.com
+    Siempre estamos en busqueda de nuevo talento.
+    ********************************************************************
+    *****************************************************************-->

@@ -82,13 +82,6 @@
             </div>
         </div><!-- Colores-->
 
-
-
-
-
-
-
-
         <?php if (have_rows('titulo_tipografia')): ?>
             <?php
             while (have_rows('titulo_tipografia')): the_row();
