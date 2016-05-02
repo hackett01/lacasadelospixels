@@ -21,7 +21,7 @@
 
 
                     <div class="col-md-5 content-box"  id="slider1" style="
-                         position: relative;
+                         position: absolute;
                          margin-top: -45%;
                          margin-left: 5%;
                          width: 90%;; 
@@ -46,7 +46,7 @@
                     ?>
                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                     <div class="col-md-5 content-box" id="slider1" style="
-                         position: relative;
+                         position: absolute;
                          margin-top: -45%;
                          margin-left: 5%;
                          width: 90%;; 

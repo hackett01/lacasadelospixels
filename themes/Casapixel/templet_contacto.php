@@ -1,5 +1,52 @@
 <?php /* Template Name: Contacto */ ?>
 
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
+<style>
+ 
+    #map {
+        height: 105%;
+    }
+</style>
+<script>
+
+// When you add a marker using a Place instead of a location, the Maps API will
+// automatically add a 'Save to Google Maps' link to any info window associated
+// with that marker.
+
+    function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 17,
+            center: {lat: 19.021302, lng: -98.193746}
+        });
+
+        var marker = new google.maps.Marker({
+            map: map,
+// Define the place with a location, and a query string.
+            place: {
+                location: {lat:  19.021302, lng: -98.193746},
+                query: 'Google, Ciudad Puebla, México'
+
+            },
+// Attributions help users find your site again.
+            attribution: {
+                source: 'Google Maps JavaScript API',
+                webUrl: 'https://developers.google.com/maps/'
+            }
+        });
+
+// Construct a new InfoWindow.
+        var infoWindow = new google.maps.InfoWindow({
+            content: 'La casa de los pixeles Privada 39 Oriente 2018-A, Col. El mirador, Puebla , Puebla '
+        });
+
+// Opens the InfoWindow when marker is clicked.
+        marker.addListener('click', function () {
+            infoWindow.open(map, marker);
+        });
+    }
+
+</script>
 <?php get_header(); ?>
 <div class="ych-menu-content">
     <!--Banner Principal -->
@@ -39,13 +86,13 @@
 
     <section id="contacto">
         <div class="row nom" >
-            <div class="col-lg-8">
+            <div class="col-lg-7">
                 <h1 class="wow fadeIn"  data-wow-duration="2s"><?php the_field('sub_title'); ?></h1>
                 <p class="wow fadeIn"  data-wow-duration="2s"><?php the_field('content_text_contact'); ?></p>
                 <div class="row">
                     <div class="col-sm-1 ">
                     </div>
-                    <div class="col-sm-6 ">
+                    <div class="col-sm-7 ">
                         <?php echo do_shortcode('[contact-form-7 id="657" title="Contact form 1"]'); ?>
 
                     </div>
@@ -65,9 +112,10 @@
                 </div>
             </div>
             <div class="col-lg-5">
+                <div id="map"></div>
             </div>
         </div>
     </section>
 
-
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzN9ri7Y-uGhIc11aEd9WfjoCGPxBHFg8&signed_in=true&libraries=places&callback=initMap"></script>
     <?php get_footer(); ?>

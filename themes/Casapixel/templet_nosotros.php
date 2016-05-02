@@ -1,5 +1,64 @@
 
 <?php /* Template Name: Nosotros */ ?>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+<script type="text/javascript">
+    $(function () {
+        $(".knob").knob({
+            'width': '134',
+            'thickness': '.1',
+            'fgColor': '#1DC7FF',
+            'bgColor': 'transparent',
+            'readOnly': 'true',
+            'displayPrevious': true,
+            'displayInput': false
+        });
+    });
+</script>
+<script>
+    function isScrolledIntoView(elem)
+    {
+        var docViewTop = $(window).scrollTop();
+        var docViewBottom = docViewTop + $(window).height();
+
+        var elemTop = $(elem).offset().top;
+        var elemBottom = elemTop + $(elem).height();
+
+        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    }
+    flag = true;
+    $(window).scroll(function () {
+        var height = $(window).scrollTop();
+        //alert(height);
+        test = isScrolledIntoView('.knob');
+
+        if (test && flag) {
+            flag = false;
+            $('.knob').each(function () {
+
+                var $this = $(this);
+                var myVal = $this.attr("rel");
+                // alert(myVal);
+                $this.knob({
+                });
+                $({
+                    value: 0
+                }).animate({
+                    value: myVal
+                }, {
+                    duration: 2000,
+                    easing: 'swing',
+                    step: function () {
+                        $this.val(Math.ceil(this.value)).trigger('change');
+                    }
+                })
+            });
+        }
+    });
+
+</script>
+<script src="<?php echo get_site_url(); ?>/wp-content/themes/Casapixel/js/jquery.knob.min.js?ver=4.4.2"></script>
 <?php get_header(); ?>
 
 <div class="ych-menu-content">
@@ -242,64 +301,7 @@
 
 <!-- Scripts -->
 <!-- Jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
-<script type="text/javascript">
-    $(function () {
-        $(".knob").knob({
-            'width': '134',
-            'thickness': '.1',
-            'fgColor': '#1DC7FF',
-            'bgColor': 'transparent',
-            'readOnly': 'true',
-            'displayPrevious': true,
-            'displayInput': false
-        });
-    });
-</script>
-<script>
-    function isScrolledIntoView(elem)
-    {
-        var docViewTop = $(window).scrollTop();
-        var docViewBottom = docViewTop + $(window).height();
 
-        var elemTop = $(elem).offset().top;
-        var elemBottom = elemTop + $(elem).height();
-
-        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-    }
-    flag = true;
-    $(window).scroll(function () {
-        var height = $(window).scrollTop();
-        //alert(height);
-        test = isScrolledIntoView('.knob');
-
-        if (test && flag) {
-            flag = false;
-            $('.knob').each(function () {
-
-                var $this = $(this);
-                var myVal = $this.attr("rel");
-                // alert(myVal);
-                $this.knob({
-                });
-                $({
-                    value: 0
-                }).animate({
-                    value: myVal
-                }, {
-                    duration: 2000,
-                    easing: 'swing',
-                    step: function () {
-                        $this.val(Math.ceil(this.value)).trigger('change');
-                    }
-                })
-            });
-        }
-    });
-
-</script>
-<script src="<?php echo get_site_url(); ?>/wp-content/themes/Casapixel/js/jquery.knob.min.js?ver=4.4.2"></script>
 
 <?php get_footer(); ?>
 
