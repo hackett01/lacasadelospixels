@@ -12,8 +12,8 @@
 	-webkit-box-sizing:content-box;
 }
 #backTop.white{
-     background:url(../img/uparr-48-b.png) no-repeat center center rgba(255,255,255,0.8);
-    border:1px solid #ccc;
+     background:url(../img/uparr-48-b.png) no-repeat center center rgba(87,183,200,0.8);
+    border:1px solid #57b7c8;
 }
 #backTop.black{
      background:url(../img/uparr-48-w.png) no-repeat center center rgba(0,0,0,0.8); 
