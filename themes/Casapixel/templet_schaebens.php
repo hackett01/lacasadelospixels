@@ -1,4 +1,6 @@
 <?php /* Template Name: templet_schaebens */ ?>
+<!-- Jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <?php get_header(); ?>
 <div class="ych-menu-content">       
     <div id="portafolio-schaebens">
@@ -337,8 +339,7 @@
 
 </div>
 <!-- Menu Content -->
-<!-- Jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
 <!-- Portafolio JS -->
 <script>
     function sliceSize(dataNum, dataTotal) {

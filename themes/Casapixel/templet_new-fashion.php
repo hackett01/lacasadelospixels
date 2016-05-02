@@ -1,4 +1,6 @@
 <?php /* Template Name: new-fashion */ ?>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <?php get_header(); ?>
 <div class="ych-menu-content">        
     <div id="portafolio-newfashion">
@@ -309,7 +311,6 @@
     <button class="go-up"><i class="lcp-icon lcp-up-angle"></i></button>
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>
     function sliceSize(dataNum, dataTotal) {
         return (dataNum / dataTotal) * 360;

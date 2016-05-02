@@ -1,4 +1,5 @@
 <?php /* Template Name: biyeon-kwan */ ?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <?php get_header(); ?>
 
 
@@ -320,8 +321,7 @@
     </div>
 
 
-    <!-- Jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ 
     <!-- Portafolio JS -->
     <script>
         function sliceSize(dataNum, dataTotal) {
