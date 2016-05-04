@@ -1,14 +1,10 @@
-
 <?php /* Template Name: Home */ ?>
-
 <?php get_header(); ?>
-
 <div class="ych-menu-content">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-
                 <?php
                 $image = get_field('slide-1');
                 if (!empty($image)):

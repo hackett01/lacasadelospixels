@@ -39,7 +39,6 @@ $generator_options = get_option('faster_theme_options');
         <?php if (!empty($generator_options['favicon'])) { ?>
             <link rel="shortcut icon" href="<?php echo esc_url($generator_options['favicon']); ?>">
         <?php } ?>
-
         <?php wp_head(); ?>
     </head>
     <body >

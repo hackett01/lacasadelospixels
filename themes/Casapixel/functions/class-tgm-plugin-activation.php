@@ -103,7 +103,7 @@
                 return;
             }
             if ( isset( $_REQUEST['tab'] ) && 'plugin-information' == $_REQUEST['tab'] ) {
-                require_once ABSPATH . 'wp-admin/includes/plugin-install.php'; // Need for install_plugin_information().
+                require_once (ABSPATH . 'wp-admin/includes/plugin-install.php'); // Need for install_plugin_information().
                 wp_enqueue_style( 'plugin-install' );
                 global $tab, $body_id;
                 $body_id = $tab = 'plugin-information';
