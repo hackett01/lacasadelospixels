@@ -2,7 +2,6 @@
 <?php get_header(); ?>
 <div class="ych-menu-content">        
     <div id="portafolio-biyeon">
-
         <?php if (have_rows('background')): ?>
             <?php
             while (have_rows('background')): the_row();
@@ -32,7 +31,6 @@
                 <?php endif; ?>
             <?php endwhile; ?>
         <?php endif; ?>
-
         <div class="colores">
             <div class="container">
                 <div class="row">
@@ -100,17 +98,13 @@
                 </div>
             </div>
         </div><!-- Colores-->
-
         <?php if (have_rows('titulo_tipografia')): ?>
             <?php
             while (have_rows('titulo_tipografia')): the_row();
-
-                // vars
                 $image = get_sub_field('imagen_fondo');
                 $content = get_sub_field('titulo_tipografia');
                 ?>
                 <?php if ($link): ?>
-
                 <?php endif; ?>
                 <div class="tipografia cover-bg">
                     <div class="container">
@@ -157,16 +151,10 @@
                         </div>
                     </div>
                 </div><!-- Tipografia-->
-
-
-
                 <?php if ($link): ?>
                 <?php endif; ?>
             <?php endwhile; ?>
         <?php endif; ?>
-
-
-
         <div class="vista-movil">
             <div class="container">
                 <div class="row">
@@ -187,7 +175,6 @@
                                 </div>
                                 <?php if ($link): ?>
                                 <?php endif; ?>
-
                             <?php endwhile; ?>
                         <?php endif; ?>
                     </div>
@@ -233,7 +220,6 @@
                         <?php endif; ?>
                     </div>
                     <a href="<?php the_field('link_page'); ?>" class="emerald-btn wow fadeIn" target="_blank" data-wow-duration="1s" data-wow-delay="1s">Visitar su sitio</a>
-
                 </div>
             </div>
 
@@ -262,7 +248,6 @@
             </div>
         </div><!-- Nuestro Trabajo -->
     </div>
-
     <div id="portafolio" class="container-fluid only-two">
         <div class="portafolio-titulo wow fadeIn">
             <h2><?php the_field('titulo_portafolio'); ?></h2>
@@ -297,7 +282,6 @@
                     <?php endif; ?>
                 <?php endwhile; ?>
             <?php endif; ?>
-
         </div>
     </div>
     <div id="contactanos">
@@ -313,7 +297,6 @@
                 </div>
             </div>
             <a href="<?php the_field('link_contacto'); ?>" class="emerald-btn wow fadeIn" data-wow-duration="2s" >iniciar proyecto</a>
-
         </div>
     </div>
     <script src="<?php echo get_site_url(); ?>/wp-content/themes/Casapixel/js/biyeon-kwan.js"></script>
