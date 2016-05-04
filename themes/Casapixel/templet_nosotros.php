@@ -217,7 +217,6 @@
 
     <div id="portafolio" class="container-fluid">
         <div class="row">
-
             <?php if (have_rows('portafolio')): ?>
                 <?php
                 while (have_rows('portafolio')): the_row();
@@ -252,11 +251,7 @@
             <?php endif; ?>
         </div>
     </div>
-
     <!-- /Portafolio -->
-
-    <!-- Contactanos -->
-
     <!-- Contactanos -->
     <div id="contactanos">
         <div class="container ">
@@ -289,8 +284,8 @@
             </div>
             <a  class="emerald-btn" href="<?php the_field('link_contac'); ?>">Iniciar proyecto</a>
         </div>
-    </div><!-- Contatanos -->
-
+    </div>
+    <!-- Contatanos -->
     <!-- Footer -->
     <?php get_footer(); ?>
     <!-- Footer -->
