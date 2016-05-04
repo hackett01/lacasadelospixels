@@ -1,16 +1,7 @@
 <?php /* Template Name: Aplicaciones web */ ?>
-
-
-
 <?php get_header(); ?>
-
-
-
 <div class="ych-menu-content">
     <div id="servicios-diseno-web" class="servicio">
-
-
-
         <!--Banner Principal -->
 
         <?php if (have_rows('background')): ?>

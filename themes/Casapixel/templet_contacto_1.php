@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 
 <div class="ych-menu-content">
-     <section id="banner1" class="banner" background="<?php echo bloginfo('template_url'); ?>/img/banner-diseno-web.jpg" background-size="cover">
+     <section id="banner1" class="banner" background="<?php echo esc_url(get_template_directory_uri()) ?>/img/banner-diseno-web.jpg" background-size="cover">
             <div class="container wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1">

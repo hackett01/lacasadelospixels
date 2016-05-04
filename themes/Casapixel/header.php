@@ -48,7 +48,7 @@ $generator_options = get_option('faster_theme_options');
                 <div class="row">
                     <div class="col-md-3 col-sm-4 col-xs-8">
                         <figure>
-                            <img src="<?php echo bloginfo('template_url'); ?>/img/logo-white.svg" alt="La Casa de los Pixeles">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/img/logo-white.svg" alt="La Casa de los Pixeles">   
                         </figure>
                     </div>
                     <?php

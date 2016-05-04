@@ -3,7 +3,7 @@
 <footer class="footer-menu">
     <div class="container">
         <div class="col-md-3 col-sm-5">
-            <img src="<?php echo bloginfo('template_url'); ?>/img/logo-white.svg" alt="La Casa de los Pixeles">
+            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/img/logo-white.svg" alt="La Casa de los Pixeles">
             <span class="copy">©2015 La Casa de los Pixeles. Todos los derechos reservados.</span>
             <br>
             <span><a href="<?php echo get_site_url() ;?>/index.php/aviso-de-privacidad/">Politicas de Privacidad</a></span>

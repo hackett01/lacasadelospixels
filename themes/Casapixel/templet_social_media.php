@@ -55,7 +55,7 @@
 
                 <div class="col-md-4 col-sm-6 servicio-content item-match">
                     <div class="inner wow   fadeIn"  data-wow-duration="2s" data-wow-delay="0.5s">
-                        <img src="<?php echo bloginfo('template_url'); ?>/img/chat-icon-small.png" alt="" data-pin-nopin="true">
+                        <img src="<?php echo esc_url(get_template_directory_uri()) ?>/img/chat-icon-small.png" alt="" data-pin-nopin="true">
                         <h2><?php the_field('title_customers'); ?></h2>
                         <p><?php the_field('contebt_text_customers'); ?></p>
                     </div>
@@ -77,7 +77,7 @@
             <div class="row">
                 <div class="col-md-4  col-sm-6 col-sm-pull-6 col-md-pull-0 servicio-content item-match">
                     <div class="inner wow  fadeIn"  data-wow-duration="2s" data-wow-delay="0.5s">
-                        <img src="<?php echo bloginfo('template_url'); ?>/img/mega-icon-small.png" alt="" data-pin-nopin="true">
+                        <img src="<?php echo esc_url(get_template_directory_uri()) ?>/img/mega-icon-small.png" alt="" data-pin-nopin="true">
                         <h2><?php the_field('title_means'); ?></h2>
                         <p><?php the_field('content_text_means'); ?></p>
                     </div>

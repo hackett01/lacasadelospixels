@@ -106,7 +106,7 @@
 </div>
 <h1><?php the_field('parallaxTitle'); ?></h1>
 
-<div id="nosotros" class="container-fluid zooom" data-background="<?php echo bloginfo('template_url'); ?>/img/nosotros-home-bg.jpg" >
+<div id="nosotros" class="container-fluid zooom" data-background="<?php echo esc_url(get_template_directory_uri()) ?>/img/nosotros-home-bg.jpg" >
     <div class="row">
         <div class="col-lg-5 col-md-6 content">
             <div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">

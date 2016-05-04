@@ -74,7 +74,7 @@
             <?php endif; ?>
 
 
-            <img src="<?php echo bloginfo('template_url'); ?>/img/w-app.png" alt="Aplicaciones Moviles">
+            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/img/w-app.png" alt="Aplicaciones Moviles">
             <h1><?php the_field('title_mobile_apps'); ?></h1>
 
             <?php if (have_rows('app_content')): ?>
