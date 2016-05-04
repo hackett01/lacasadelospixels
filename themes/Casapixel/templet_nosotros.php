@@ -1,66 +1,8 @@
 
 <?php /* Template Name: Nosotros */ ?>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
-<script type="text/javascript">
-    $(function () {
-        $(".knob").knob({
-            'width': '134',
-            'thickness': '.1',
-            'fgColor': '#1DC7FF',
-            'bgColor': 'transparent',
-            'readOnly': 'true',
-            'displayPrevious': true,
-            'displayInput': false
-        });
-    });
-</script>
-<script>
-    function isScrolledIntoView(elem)
-    {
-        var docViewTop = $(window).scrollTop();
-        var docViewBottom = docViewTop + $(window).height();
 
-        var elemTop = $(elem).offset().top;
-        var elemBottom = elemTop + $(elem).height();
-
-        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-    }
-    flag = true;
-    $(window).scroll(function () {
-        var height = $(window).scrollTop();
-        //alert(height);
-        test = isScrolledIntoView('.knob');
-
-        if (test && flag) {
-            flag = false;
-            $('.knob').each(function () {
-
-                var $this = $(this);
-                var myVal = $this.attr("rel");
-                // alert(myVal);
-                $this.knob({
-                });
-                $({
-                    value: 0
-                }).animate({
-                    value: myVal
-                }, {
-                    duration: 2000,
-                    easing: 'swing',
-                    step: function () {
-                        $this.val(Math.ceil(this.value)).trigger('change');
-                    }
-                })
-            });
-        }
-    });
-
-</script>
-<script src="<?php echo get_site_url(); ?>/wp-content/themes/Casapixel/js/jquery.knob.min.js?ver=4.4.2"></script>
 <?php get_header(); ?>
-
 <div class="ych-menu-content">
     <section id="banner1" class="banner" background="<?php echo bloginfo('template_url'); ?>/img/banner-diseno-web.jpg" background-size="cover">
         <div class="container wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
@@ -295,9 +237,11 @@
 
 
 <!-- Scripts -->
-<!-- Jquery -->
-
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+<script src="<?php echo get_site_url(); ?>/wp-content/themes/Casapixel/js/jquery.knob.min.js?ver=4.4.2"></script>
+<script src="<?php echo get_site_url(); ?>/wp-content/themes/Casapixel/js/funtion_Color.js"></script>
+<script src="<?php echo get_site_url(); ?>/wp-content/themes/Casapixel/js/font_color.js"></script>
 <?php get_footer(); ?>
 
 

@@ -1,7 +1,6 @@
 <?php /* Template Name: templet_schaebens */ ?>
-<!-- Jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <?php get_header(); ?>
+
 <div class="ych-menu-content">       
     <div id="portafolio-schaebens">
         <?php if (have_rows('imagen_background')): ?>
@@ -340,108 +339,5 @@
 </div>
 <!-- Menu Content -->
 
-<!-- Portafolio JS -->
-<script>
-    function sliceSize(dataNum, dataTotal) {
-        return (dataNum / dataTotal) * 360;
-    }
-    function addSlice(sliceSize, pieElement, offset, sliceID, color) {
-        $(pieElement).append("<div class='slice " + sliceID + "'><span></span></div>");
-       var offset = offset - 1;
-        var sizeRotation = -179 + sliceSize;
-        $("." + sliceID).css({
-            "transform": "rotate(" + offset + "deg) translate3d(0,0,0)"
-        });
-        $("." + sliceID + " span").css({
-            "transform": "rotate(" + sizeRotation + "deg) translate3d(0,0,0)",
-            "background-color": color
-        });
-    }
-    function iterateSlices(sliceSize, pieElement, offset, dataCount, sliceCount, color) {
-        var sliceID = "s" + dataCount + "-" + sliceCount;
-        var maxSize = 179;
-        if (sliceSize <= maxSize) {
-            addSlice(sliceSize, pieElement, offset, sliceID, color);
-        } else {
-            addSlice(maxSize, pieElement, offset, sliceID, color);
-            iterateSlices(sliceSize - maxSize, pieElement, offset + maxSize, dataCount, sliceCount + 1, color);
-        }
-    }
-    function createPie(dataElement, pieElement) {
-        var listData = [];
-        $(dataElement + " span").each(function () {
-            listData.push(Number($(this).html()));
-        });
-        var listTotal = 0;
-        for (var i = 0; i < listData.length; i++) {
-            listTotal += listData[i];
-        }
-        var offset = 0;
-        var color = [
-            "cornflowerblue",
-            "olivedrab",
-            "orange",
-            "tomato",
-            "crimson",
-            "purple",
-            "turquoise",
-            "forestgreen",
-            "navy",
-            "gray"
-        ];
-        for (var i = 0; i < listData.length; i++) {
-            var size = sliceSize(listData[i], listTotal);
-            iterateSlices(size, pieElement, offset, i, 0, color[i]);
-            $(dataElement + " li:nth-child(" + (i + 1) + ")").css("border-color", color[i]);
-            offset += size;
-        }
-    }
-    createPie(".pieID.legend", ".pieID.pie");
-
-    $(function () {
-        $('.estadisticas').waypoint(function () {
-            var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
-            $('.dollars').animateNumber(
-                    {
-                        number: 45400,
-                        numberStep: comma_separator_number_step
-                    },
-                    6000
-                    );
-            var percent_number_step = $.animateNumber.numberStepFactories.append(' %')
-            $('.percent').animateNumber(
-                    {
-                        number: 82,
-                        numberStep: percent_number_step
-                    },
-                    6000
-                    );
-            $('.percentweb1').animateNumber(
-                    {
-                        number: 49,
-                        numberStep: percent_number_step
-                    },
-                    6000
-                    );
-            $('.percentweb2').animateNumber(
-                    {
-                        number: 78,
-                        numberStep: percent_number_step
-                    },
-                    6000
-                    );
-            $('.percentweb3').animateNumber(
-                    {
-                        number: 41,
-                        numberStep: percent_number_step
-                    },
-                    6000
-                    );
-
-        }, {
-            offset: '100%'
-        });
-    });
-
-</script>
+<script src="<?php echo get_site_url(); ?>/wp-content/themes/Casapixel/js/schaebens.js"></script>
 <?php get_footer(); ?>

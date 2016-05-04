@@ -34,6 +34,7 @@ $generator_options = get_option('faster_theme_options');
         <meta property="og:url" content="http://lacasadelospixeles.com" />
         <meta property="og:image" content="http://lacasadelospixeles.com/img/sm-logo.jpg" />
         <meta property="og:description" content="Creamos soluciones digitales, desde sitios web hasta aplicaciones móviles y campañas de marketing digital. Cónocenos y comprueba por que somos tu mejor ocpión para servicios digitales." />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
         <?php if (!empty($generator_options['favicon'])) { ?>
             <link rel="shortcut icon" href="<?php echo esc_url($generator_options['favicon']); ?>">
@@ -74,10 +75,10 @@ $generator_options = get_option('faster_theme_options');
             </div>
         </div>
     </header>
-          <!--****************************************************************
-    ********************************************************************
-    Es bueno verte por aquí. Si te interesa trabajar con nosotros
-    puedes enviar tu C.V. a jobs@lacasadelospixeles.com
-    Siempre estamos en busqueda de nuevo talento.
-    ********************************************************************
-    *****************************************************************-->
+    <!--****************************************************************
+********************************************************************
+Es bueno verte por aquí. Si te interesa trabajar con nosotros
+puedes enviar tu C.V. a jobs@lacasadelospixeles.com
+Siempre estamos en busqueda de nuevo talento.
+********************************************************************
+*****************************************************************-->
