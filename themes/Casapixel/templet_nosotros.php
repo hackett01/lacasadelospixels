@@ -3,6 +3,8 @@
 
 
 <?php get_header(); ?>
+
+
 <div class="ych-menu-content">
     <section id="banner1" class="banner" background="<?php echo esc_url(get_template_directory_uri()) ?>/img/banner-diseno-web.jpg" background-size="cover">
         <div class="container wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
@@ -100,6 +102,8 @@
         </div>
     </div>
     <!-- /Nosotros -->
+
+   
     <!-- Datos -->
     <div class="datos" data-parallax="scroll" data-image-src="img/bg-datos.jpg" data-z-index="0">
         <div class="container">
@@ -242,6 +246,26 @@
 <script src="<?php echo get_site_url(); ?>/wp-content/themes/Casapixel/js/jquery.knob.min.js?ver=4.4.2"></script>
 <script src="<?php echo get_site_url(); ?>/wp-content/themes/Casapixel/js/funtion_Color.js"></script>
 <script src="<?php echo get_site_url(); ?>/wp-content/themes/Casapixel/js/font_color.js"></script>
+
+
+
+<script src="//lacasadelospixeles.com/js/jquery.cycle.all.js"></script>
+<script src="//lacasadelospixeles.com/js/jquery.knob.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="//lacasadelospixeles.com/js/bootstrap.min.js"></script>
+<!-- Plugins JS -->
+<script async src="//lacasadelospixeles.com/js/plugins.js"></script>
+<!-- WOW JS -->
+<script  src="//lacasadelospixeles.com/js/wow.min.js"></script>
+
+<!-- Parallax JS -->
+<!-- <script  src="//lacasadelospixeles.com/js/parallax.js"></script> -->
+<script src="//lacasadelospixeles.com/js/jquery.matchHeight.js" type="text/javascript"></script>
+
+
+<script async src="//lacasadelospixeles.com/js/main.js"></script>
+
+
 <?php get_footer(); ?>
 
 

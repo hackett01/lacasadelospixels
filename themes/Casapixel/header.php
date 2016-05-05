@@ -49,34 +49,30 @@ $generator_options = get_option('faster_theme_options');
                             <img src="<?php echo esc_url(get_template_directory_uri()) ?>/img/logo-white.svg" alt="La Casa de los Pixeles">   
                         </figure>
                     </div>
-                    <?php
-                    $generator_defaults = array(
-                        'theme_location' => 'primary',
-                        'container' => 'div',
-                        'container_class' => 'navbar-collapse collapse no-padding pull-right',
-                        'container_id' => 'bs-example-navbar-collapse-1',
-                        'menu_class' => 'navbar-collapse no-padding pull-right collapse',
-                        'menu_id' => '',
-                        'echo' => true,
-                        'fallback_cb' => 'wp_page_menu',
-                        'before' => '',
-                        'after' => '',
-                        'link_before' => '',
-                        'link_after' => '',
-                        'items_wrap' => '<ul class="nav navbar-nav generator-menu">%3$s</ul>',
-                        'depth' => 0,
-                        'walker' => ''
-                    );
-                    wp_nav_menu($generator_defaults);
-                    ?>
+                    <div class="pull-right navigation">
+                        <nav class="hidden-sm hidden-xs">
+                            <?php
+                            $generator_defaults = array(
+                                'container_class' => 'navbar-collapse  pull-right',
+                                'items_wrap' => '<ul class="nav navbar-nav generator-menu">%3$s</ul>',
+                            );
+                            wp_nav_menu($generator_defaults);
+                            ?>
+                    </nav> 
+                    </div>
+                   
+
+
+
+
                 </div>
             </div>
-        </div>
-    </header>
-    <!--****************************************************************
-********************************************************************
-Es bueno verte por aquí. Si te interesa trabajar con nosotros
-puedes enviar tu C.V. a jobs@lacasadelospixeles.com
-Siempre estamos en busqueda de nuevo talento.
-********************************************************************
-*****************************************************************-->
+
+        </header>
+        <!--****************************************************************
+    ********************************************************************
+    Es bueno verte por aquí. Si te interesa trabajar con nosotros
+    puedes enviar tu C.V. a jobs@lacasadelospixeles.com
+    Siempre estamos en busqueda de nuevo talento.
+    ********************************************************************
+    *****************************************************************-->
