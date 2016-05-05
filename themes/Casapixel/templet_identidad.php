@@ -223,11 +223,10 @@
             <?php endif; ?>
 
 
-        </div>        </div>
+        </div>        
+    </div>
     <!-- /Portafolio -->
-    <!-- /Portafolio -->
-
-
+    
     <!-- Contactanos -->
     <div id="contactanos">
         <div class="container">

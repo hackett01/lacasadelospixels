@@ -6,7 +6,7 @@ get_header();
 ?>
 <div class="generator-single-blog section-main">
     <div class=" container-generator container">
-        <h1><?php _e('Author : All posts by ', 'generator');
+        <h1><?php _e('Author : All posts by ', 'La casa de los pixeles');
 echo " : " . get_the_date('M-Y'); ?></h1>
         <div class="header-breadcrumb">
             <ol>

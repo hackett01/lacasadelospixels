@@ -46,7 +46,11 @@ $generator_options = get_option('faster_theme_options');
                 <div class="row">
                     <div class="col-md-3 col-sm-4 col-xs-8">
                         <figure>
-                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/img/logo-white.svg" alt="La Casa de los Pixeles">   
+                            <?php if (empty($generator_options['logo'])) { ?>
+                                <h1 class="generator-site-name"><a href="<?php echo get_site_url(); ?>"><?php echo get_bloginfo('name'); ?></a></h1>
+                            <?php } else { ?>
+                                <a href="<?php echo get_site_url(); ?>"><img src="<?php echo esc_url($generator_options['logo']); ?>" alt="" class="logo-center" /></a>
+                            <?php } ?> 
                         </figure>
                     </div>
                     <div class="pull-right navigation">
@@ -60,11 +64,6 @@ $generator_options = get_option('faster_theme_options');
                             ?>
                         </nav> 
                     </div>
-
-
-
-
-
                 </div>
             </div>
 
