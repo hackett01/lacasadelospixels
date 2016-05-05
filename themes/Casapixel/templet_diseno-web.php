@@ -36,7 +36,6 @@
         <!-- Contenido -->
         <div class="container-fluid">
             <div class="row">
-
                 <?php
                 $image = get_field('pic-1');
 
@@ -156,12 +155,15 @@
             </div>
         </div><!-- Content -->
 
-
-        <!-- Estadisticas -->
+  <!-- Estadisticas -->
         <div class="estadisticas bg-cover">
             <div class="container">
                 <div class="row text-center">
                     <h3 class="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s"><?php the_field('title_stadics'); ?></h3>
+
+                    <div class="col-sm-2" data-wow-delay="0.5s">
+                    </div>
+
                     <?php if (have_rows('content_stadis')): ?>
                         <?php
                         while (have_rows('content_stadis')): the_row();
@@ -188,6 +190,7 @@
             </div>
         </div>
         <!-- Estadisticas -->
+
         <!-- Tecnologias -->
         <div class="tecnologias-empleadas text-center">
             <div class="container">
@@ -264,7 +267,8 @@
             <?php endif; ?>
 
 
-        </div>        </div>
+        </div>       
+    </div>
     <!-- /Portafolio -->
     <!-- Contactanos -->
     <div id="contactanos">
@@ -282,7 +286,9 @@
             </div>
             <a  class="emerald-btn" href="<?php the_field('link_contact'); ?>">Iniciar proyecto</a>
         </div>
+       
     </div>
-    <!-- Contatanos -->
+    <!-- Contactanos -->
+   
 
     <?php get_footer(); ?>

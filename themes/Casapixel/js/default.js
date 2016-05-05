@@ -49,16 +49,5 @@ jQuery(document).ready(function(e) {
 			autoHeight : false,
 	});	
 	
-	jQuery(function () {
-
-      // Slideshow 4
-      jQuery("#slider4").responsiveSlides({
-        auto: true,
-        pager: false,
-        nav: true,
-        speed: 500,
-        namespace: "callbacks",
-      });
-
-    });
+	
 });

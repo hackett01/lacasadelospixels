@@ -58,9 +58,9 @@ $generator_options = get_option('faster_theme_options');
                             );
                             wp_nav_menu($generator_defaults);
                             ?>
-                    </nav> 
+                        </nav> 
                     </div>
-                   
+
 
 
 

@@ -1,7 +1,5 @@
 <?php /* Template Name: careers */ ?>
-
 <?php get_header(); ?>
-
 <!-- /Banner Principal -->
 <div class="ych-menu-content">
 
@@ -147,7 +145,7 @@
                 </div>
                 <?php if ($link): ?>
                 <?php endif; ?>
-             <?php endwhile; ?>
+            <?php endwhile; ?>
 
         <?php endif; ?>
         <!-- Modal -->
@@ -170,9 +168,9 @@
                 </div>
 
             </div>
+            
         </section>
     </div>
-
 
 
     <?php get_footer(); ?>
