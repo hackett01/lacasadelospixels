@@ -16,8 +16,7 @@
             <br>
             <span><a href="<?php echo get_site_url(); ?>/index.php/aviso-de-privacidad/">Politicas de Privacidad</a></span>
         </div><!-- Copyright -->
-        <div class="col-md-4 col-md-offset-5 col-sm-6 col-sm-offset-1 contact">
-
+        <div class="col-md-4 col-md-offset-5 col-sm-6 col-sm-offset-1 contact"
             <span> <?php
                 if (!empty($generator_options['footertext'])) {
                     echo esc_attr($generator_options['footertext']) . ' ';

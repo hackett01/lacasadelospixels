@@ -8,6 +8,7 @@ add_action('admin_init', 'fasterthemes_options_init');
 
 function ft_options_validate($input) {
     $input['logo'] = esc_url($input['logo']);
+    $input['logofooter'] = esc_url($input['logofooter']);
     $input['favicon'] = esc_url($input['favicon']);
     $input['footertext'] = wp_filter_nohtml_kses($input['footertext']);
     $input['email'] = wp_filter_nohtml_kses($input['email']);
@@ -108,7 +109,7 @@ function fastertheme_framework_page() {
                         <div id="options-group-1" class="group faster-inner-tabs">   
 
                             <div class="section theme-tabs theme-logo">
-                                <a class="heading faster-inner-tab active" href="javascript:void(0)"><?php _e('Site Logos', 'generator') ?></a>
+                                <a class="heading faster-inner-tab active" href="javascript:void(0)"><?php _e('Site header Logos', 'generator') ?></a>
                                 <div class="faster-inner-tab-group active">
                                     <div class="ft-control">
                                         <input id="logo-img" class="upload" type="text" name="faster_theme_options[logo]" 
@@ -128,6 +129,13 @@ function fastertheme_framework_page() {
 
                                 </div>
                             </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
                             <div class="section theme-tabs theme-favicon">
                                 <a class="heading faster-inner-tab" href="javascript:void(0)"><?php _e('Favicon', 'generator') ?></a>
                                 <div class="faster-inner-tab-group">
